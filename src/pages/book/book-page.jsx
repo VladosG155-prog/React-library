@@ -308,7 +308,7 @@ export const BookPage = () => {
                   >
                     {data.images?.map(({ url }) => (
                       <SwiperSlide className='slide-top'>
-                        <img src={`${baseApiUrl}${url}`} alt='' />
+                        <img src={`${url}`} alt='' />
                       </SwiperSlide>
                     ))}
                   </Swiper>
@@ -323,7 +323,7 @@ export const BookPage = () => {
                     >
                       {data?.images?.map(({ url }) => (
                         <SwiperSlide data-test-id='slide-mini' className='slide'>
-                          <img src={`${baseApiUrl}${url}`} alt='' />
+                          <img src={`${url}`} alt='' />
                         </SwiperSlide>
                       ))}
                     </Swiper>

@@ -89,7 +89,7 @@ export const ProductCard = ({
       )}
       <Link to={`/books/${activeCategory}/${id}`}>
         <div className='product-image'>
-          <img src={image ? `${baseApiUrl}${image.url || image}` : bookImgFree} alt='' />
+          <img src={image ? `${image.url || image}` : bookImgFree} alt='' />
         </div>
         <div className={view === 'rows' ? 'row-card-wrap' : 'list-card-wrap'}>
           {view === 'rows' && <StarRating score={rating} />}
