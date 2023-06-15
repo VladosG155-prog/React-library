@@ -1,0 +1,94 @@
+.root{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 8px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 15px 25px;
+    @media screen and (max-width: 600px) {
+        padding: 16px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+   
+}
+.calendarHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.navigationButtons{
+    & button{
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}
+.days{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    & span{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        color: #F9640B
+    }
+}
+.hidden{
+    visibility: hidden;
+}
+.dayNumbers{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 12px;
+    margin-top: 10px;
+    & button{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        border-radius: 100%;
+        transition: .3s all ease;
+        margin-right: 12px;
+        text-align: center;
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+        @media screen and (max-width: 600px) {
+            margin-right: 0px;
+        }
+       
+        &.activeToPeek{
+            color: rgb(54, 54, 54);
+            &:hover{
+                border: 1px solid #BFC4C9;
+                border-radius: 16px;
+            }
+        }
+        &.weekend{
+            background: #FEEBEA;
+            border-radius: 16px;
+            color: #A7A7A7;
+        }
+        
+        &.today{
+            color: rgb(248, 54, 0);
+        }
+        &.active{
+            background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+            color: #fff;
+        }
+       
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.38px;
+        color: rgb(167, 167, 167);
+    }
+}

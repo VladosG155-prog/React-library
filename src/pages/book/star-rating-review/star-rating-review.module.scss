@@ -1,0 +1,25 @@
+.root{
+    display: flex;
+    & button{
+        width: 35px;
+        height: 33px;
+        cursor: pointer;
+        margin-right: 19px;
+        &:last-child{
+            margin-right: 0px;
+        }
+        &.active{
+            & svg path{
+                fill: #FFBC1F;
+            }
+        }
+        & i{
+            width: 100%;
+            height: 100%;
+        }
+        & svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

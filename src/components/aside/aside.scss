@@ -1,0 +1,191 @@
+.aside{
+    width: 35%;
+    max-width: 279px;
+    padding-right: 20px;
+    
+    button{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        width: 100%;
+        color: #363636;
+
+        letter-spacing: 0.1px;
+       
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 17px;
+        &.active{
+            color: #F83600;
+            border-bottom: 1px solid #F83600;
+            & i{
+                transform: rotate(0deg);
+                & svg path{
+                fill: #F83600;
+            }
+            }
+        }
+        & i{
+            transition: .3s all ease-in-out;
+            transform: rotate(180deg);
+            
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 279px;
+            
+        }
+    }
+    @media screen and (max-width: 768px) {
+        background: #F9F9FA;
+        box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+        border-radius: 10px;
+        position: absolute;
+        top: 100%;
+        width: 80%;
+        max-width: unset;
+        z-index: 30;
+        display: none;
+        &.active{
+            display: block;
+        }
+        &-top{
+            padding-top: 32px;
+            padding-left: 32px;
+            
+        }
+        & p{
+            display: block;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: #363636;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        width: calc(100% - 32px);
+        &-top{
+            padding-left: 16px;
+        }
+    }
+}
+.menuList-item{
+    display: flex;
+    margin-bottom: 16px;
+    cursor: pointer;
+    align-items: center;
+    
+    position: relative;
+    &.hidden{
+        display: none;
+    }
+    &.active{
+        font-size: 18px;
+        font-weight: 700;
+        color: #F83600;
+        position: relative;
+        & p{
+            font-size: 18px;
+            font-weight: 700;
+            color: #F83600;
+        }
+        & span{
+            font-weight: 400;
+        }
+        
+    }
+    & span{
+        margin-left: 6px;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        color: #A7A7A7;
+        
+       &:first-child{
+        color:  #363636;
+        margin-left: 0px;
+       }
+    }
+}
+.aside-wrap{
+    padding-left: 20px;
+    max-height: 0px;
+    transition: .3s all ease-in-out;
+    &.active{
+        max-height: 602px;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 279px;
+        &.active{
+            height: 642px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &.active{
+            height: 462px;
+        }
+    }
+    
+}
+.aside-wrapper{
+    max-width: 280px;
+}
+.aside-footer{
+    margin-top: 42px;
+    @media screen and (max-width: 768px) {
+        padding-left: 32px;
+    }
+    @media screen and (max-width: 600px) {
+        padding-left: 16px;
+    }
+    & a{
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+        color: #363636;
+        &.active{
+            color: #F83600;
+            border-bottom: 1px solid #F83600;
+        }
+        &:first-child{
+            margin-bottom: 42px;
+        }
+    }
+}
+.aside-profile{
+    margin-top: 52px;
+    position: relative;
+    border-top: 1px solid #BFC4C9;
+    padding-top: 32px;
+    padding-bottom: 52px;
+    padding-left: 32px;
+    @media screen and (max-width: 600px) {
+        padding-left: 16px;
+    }
+    & a{
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+        color: #363636;
+        margin-bottom: 42px;
+    }
+    & p{
+        margin-bottom: 42px;
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+        color: #363636;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}

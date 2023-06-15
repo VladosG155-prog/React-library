@@ -1,0 +1,35 @@
+.root{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .btns{
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 600px)  {
+            flex-direction: column;
+            width: 100%;
+            
+        }
+        & button{
+            width: 255px;
+            @media screen and (max-width: 600px)  {
+                width: 100%;
+            }
+            &:last-child{
+                margin-left: 16px;
+              
+                @media screen and (max-width: 600px)  {
+                    margin-top: 16px;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    .input{
+        width: 48%;
+        @media screen and (max-width: 600px)  {
+            width: 100%;
+        }
+    }
+}

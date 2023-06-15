@@ -1,0 +1,14 @@
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &[data-size='L']{
+        width: 32px;
+        height: 32px;
+        & svg{
+            width: 32px;
+            height: 32px;
+         }
+    }
+   
+}

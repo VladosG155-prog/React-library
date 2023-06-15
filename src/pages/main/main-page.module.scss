@@ -1,0 +1,128 @@
+.root{
+    display: flex;
+    padding-top: 62px;
+    align-items: flex-start;
+    margin-bottom: 62px;
+    width: 100%;
+    @media screen and (max-width: 600px) {
+        padding-top: 8px;
+    }
+
+
+
+
+.topMenu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.errorTitle{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #A7A7A7;
+    margin: 0 auto;
+    margin-top: 180px;
+    @media screen and (max-width: 768px) {
+        margin-top: 130px;
+    }
+}
+.topMenuFirst{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    & .button{
+        margin-right: 16px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+.mainPageInput{
+    margin-right: 16px;
+    width: 350px;
+    @media screen and (max-width:768px) {
+        max-width: 274px;
+    }
+}
+.inputMobile{
+    width: 0%;
+    transition: .3s all ease;
+    &.active{
+        width: 100%;
+        opacity: 1;
+    }
+    &.hidden{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.mainPageWrap{
+    flex: 1;
+    margin-left: 8px;
+    @media screen and (max-width: 600px) {
+       margin-left: 0px;
+    }
+}
+.topMenuLast{
+    display: flex;
+    align-items: center;
+    & button:last-child{
+        margin-left: 16px;
+    }
+}
+.star{
+    margin-right: 8px;
+}
+
+.booksWrapLists{
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 600px) {
+      margin-top: 16px;
+    }
+    & .product-card:last-child{
+        margin-right: auto;
+        @media screen and (max-width: 600px) {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+
+}
+.booksWrapRows{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .top-menu-first{
+        flex: 1;
+    }
+}
+@media screen and (max-width: 600px) {
+    .top-menu-first{
+        
+        & button:first-child{
+            margin-right: 16px;
+        }
+    }
+}
+}
+.btns{
+    width: 100%;
+    & button:first-child{
+        margin-bottom: 10px;
+    }
+}
+.dropDownIcon{
+    transform: rotate(0deg);
+    &.active{
+        transform: rotate(180deg);
+    }
+}
